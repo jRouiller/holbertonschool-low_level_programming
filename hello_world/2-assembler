@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c $CFILE | echo > /tmp/holbertonschool-low_level_programming/${CFILE}.s
+gcc -s $CFILE 
