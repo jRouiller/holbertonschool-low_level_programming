@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E c -o c.pre | export CFILE=c.pre
+gcc -E c -o $CFILE
