@@ -3,5 +3,5 @@ int main (void)
 {
 	/*Printing a string with puts*/
 	puts("Programming is like building a multilingual puzzle");
-	Return(0)
+	return(0);
 }
