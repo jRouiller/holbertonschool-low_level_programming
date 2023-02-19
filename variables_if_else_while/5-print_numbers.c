@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 /**
  *main - start
  *Return: always 0
