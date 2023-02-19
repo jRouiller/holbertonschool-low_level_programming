@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int cba;
+	int abece;
 
-	for (cba = 'z'; cba >= 'a' ; cba--)
+	for (abece = 'z'; abece >= 'a' ; abece--)
 	{
-		putchar(cba);
+		putchar(abece);
 	}
 	putchar('\n');
 	return (0);
