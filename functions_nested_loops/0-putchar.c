@@ -1,9 +1,8 @@
-#include <main.h>
+#include <stdio.h>
 /**
- * main - start
- * return: always 0 for success
+ * main - check the code
  *
- *
+ * Return: Always 0.
  */
 int main(void)
 {
