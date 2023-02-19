@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	n = rand();
+	n = rand() % 201 - 100;
 
 
 	if (n < 0)
