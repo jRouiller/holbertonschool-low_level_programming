@@ -13,9 +13,9 @@ int main(void)
 	for (abc = 'a' ; abc <= 'z' ; abc++)
 	{
 		if (abc == 'q' || abc == 'e')
-			{
-				abc++;
-			}
+		{
+			abc++;
+		}
 		putchar(abc);
 	}
 	putchar('\n');
