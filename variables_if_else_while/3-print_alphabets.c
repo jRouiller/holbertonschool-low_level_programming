@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- *main - start
- *Return: always 0
+ *main - entry point
+ *
+ *Return: Always 0 (Success)
  *
  *
  */
@@ -11,15 +13,18 @@ int main(void)
 	char ABC = 'A';
 
 	while (abc <= 'z')
-		{
-			putchar(abc);
-			abc++;
-		}
+	{
+		putchar(abc);
+		abc++;
+	}
+
 	while (ABC <= 'Z')
-		{
-			putchar(ABC);
-			ABC++;
-		}
-			putchar('\n');
-			return (0);
+	{
+		putchar(ABC);
+		ABC++;
+	}
+
+	putchar('\n');
+
+	return (0);
 }
