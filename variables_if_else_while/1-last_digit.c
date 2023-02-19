@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  *  *main - start
- *   *Return: always 0
+ *  *Return: always 0
  *
  *
- * */
+ **/
+
 int main(void)
 {
 	int n;
@@ -16,7 +18,9 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 	ln = n % 10;
-	/* your code goes there */
+	/* 
+	 * your code goes there
+	 */
 	if (ln > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, ln);
