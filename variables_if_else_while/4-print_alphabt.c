@@ -5,18 +5,19 @@
  *
  *
  */
+
 int main(void)
 {
 	char abc;
 
 	for (abc = 'a' ; abc <= 'z' ; abc++)
-		{
-			if (abc == 'q' || abc == 'e')
-				{
-					abc++;
-				}
-			putchar(abc);
-		}
+	{
+		if (abc == 'q' || abc == 'e')
+			{
+				abc++;
+			}
+		putchar(abc);
+	}
 	putchar('\n');
 	return (0);
 }
