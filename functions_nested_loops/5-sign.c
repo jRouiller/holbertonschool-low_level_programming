@@ -1,20 +1,29 @@
 #include "main.h"
 
+nclude "main.h"
 /**
- * print_alphabet - print alphabet
+ * print_sign - main function
  *
+ * @n: char to comp
  *
+ * Return: if n > 0 return 1, n < 0 return -1, n = 0 return 0
  *
- */
-
-void print_alphabet(void)
+ **/
+int print_sign(int n)
 {
-	char l = 'a';
-
-	while (l <= 'z')
+	if (n > 0)
 	{
-		_putchar(l);
-		l++;
+		_putchar('+');
+		return (1);
 	}
-	_putchar('\n');
+	else if (n < 0)
+	{
+		_putchar('-');
+		return (-1);
+	}
+	else
+	{
+		_putchar('0');
+		return (0);
+	}
 }
