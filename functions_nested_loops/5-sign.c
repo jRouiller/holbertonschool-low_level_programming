@@ -1,6 +1,5 @@
 #include "main.h"
 
-nclude "main.h"
 /**
  * print_sign - main function
  *
@@ -9,6 +8,7 @@ nclude "main.h"
  * Return: if n > 0 return 1, n < 0 return -1, n = 0 return 0
  *
  **/
+
 int print_sign(int n)
 {
 	if (n > 0)
