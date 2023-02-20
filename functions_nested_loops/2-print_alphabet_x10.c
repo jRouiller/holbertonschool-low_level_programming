@@ -1,27 +1,21 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - check the code.
+ * print_alphabet_x10 - start.
  *
- * Return: Always 0.
+ *
  */
 
-int main(void)
-{
-	printf(print_alphabet__x10);
-	return (0)
-}
-
-/*This is a function prototype void*/
 void print_alphabet_x10(void)
 {
-	int l, a;
+	int l;
+	int a;
 
 	for (a = 0 ; a <= 9 ; a++)
 	{
-		for (l = 'a' ; l <= 'z' ; l++)
-		{
-			_putchar(l);
-		}
-		_putchar('\n');
+	for (l = 'a' ; l <= 'z' ; l++)
+	{
+		_putchar(l);
 	}
+	_putchar('\n');
+										}
 }
