@@ -5,6 +5,11 @@
  * Return: Always 0.
  */
 
+int main(void)
+{
+	printf(print_alphabet__x10);
+	return (0)
+}
 
 /*This is a function prototype void*/
 void print_alphabet_x10(void)
@@ -19,6 +24,4 @@ void print_alphabet_x10(void)
 		}
 		_putchar('\n');
 	}
-	printf(print_alphabet__x10);
-	return (0)
 }
