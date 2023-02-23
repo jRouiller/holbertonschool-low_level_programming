@@ -1,0 +1,10 @@
+all : main.c school.c
+	gcc main.c school.c -o school
+
+main.c : main.c m.h
+	gcc -c main.c
+school.c : school.c m.h
+	gcc -c school.c
+
+%.o : %.c
+	gcc -c -wall $< -o $@
