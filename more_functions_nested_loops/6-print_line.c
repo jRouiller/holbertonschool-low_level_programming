@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *  *print_line - mian
- *   *@n: n
- *    *Return: return
- *     *
- *      */
+ * print_line - mian
+ * @n: n
+ * Return: return
+ *
+ */
 void print_line(int n)
 {
 	int i;
