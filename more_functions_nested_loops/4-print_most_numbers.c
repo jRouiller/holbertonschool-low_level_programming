@@ -2,8 +2,8 @@
 /**
  *  *print_most_numbers - main
  *   *Return: return
- *    *
- *     */
+ *
+ */
 void print_most_numbers(void)
 {
 	int i;
