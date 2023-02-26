@@ -1,16 +1,11 @@
 #include "main.h"
 /**
- *  *print_numbers - main
- *   *Return: a
- *    *
- *     *
- *      */
-void print_numbers(void)
+ * mul - main
+ * @a: a
+ * @b: b
+ * Return: return
+ */
+int mul(int a, int b)
 {
-	int i;
-	for (i = '0'; i <= '9'; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+	return (a * b);
 }
