@@ -5,15 +5,18 @@
  *
  *
  */
-void print_numbers(void);
-
 void print_numbers(void)
-{
-	int i;
 
-	for (i = '0'; i <= '9'; i++)
+int main(void)
+{
+	void print_numbers(void)
 	{
-		_putchar(i);
+		int i;
+
+		for (i = '0'; i <= '9'; i++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
