@@ -9,6 +9,7 @@
 
 int _isupper(int c)
 {
+	/*this should return if letter is a capital letter or not*/
 	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
