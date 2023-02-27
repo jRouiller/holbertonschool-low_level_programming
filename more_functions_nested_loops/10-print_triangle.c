@@ -2,7 +2,8 @@
 /**
  *  *print_triangle - main
  *   *@size: size
- *    */
+ *
+ */
 void print_triangle(int size)
 {
 	int a, b, c;
