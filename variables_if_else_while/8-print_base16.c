@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	int locura;
+	int vari;
 
-	for (locura = 0 ; locura < 16 ; locura++)
+	for (vari = 0 ; vari < 16 ; vari++)
 	{
-		if (locura < 10)
+		if (vari < 10)
 		{
-			putchar(locura + '0');
+			putchar(vari + '0');
 		}
 		else
 		{
-			putchar(locura - 10 + 'a');
+			putchar(vari - 10 + 'a');
 		}
 	}
 	putchar('\n');
