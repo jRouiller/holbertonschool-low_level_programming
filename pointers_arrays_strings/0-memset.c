@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * _memset - meme main function
  * @s: fill area
