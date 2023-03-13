@@ -1,13 +1,17 @@
 #include "main.h"
 /**
- *main - prints all arguments it receives
- *@argc: argc
- *@argv: argv
- *Return: 0
+ * main - that prints all arguments it receives.
+ * @argc: argc
+ * @argv: argv
+ * Return:0
  */
 int main(int argc, char *argv[])
 {
-	(void) argv;
-	printf("%d\n", argc - 1);
+	int x = 0;
+
+	for (; x < argc; x++)
+	{
+		printf("%s\n", argv[x]);
+	}
 	return (0);
 }
