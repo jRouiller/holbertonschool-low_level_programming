@@ -1,0 +1,1169 @@
+!<arch>
+//                                              208       `
+10-print_triangle.c/
+11-print_to_98.c/
+2-print_alphabet_x10.c/
+4-print_most_numbers.c/
+5-more_numbers.c/
+5-string_toupper.c/
+7-print_chessboard.c/
+7-print_diagonal.c/
+7-print_last_digit.c/
+8-print_square.c/
+
+0-isupper.c/    0           0     0     644     190       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _isupper - main
+ * @c: c
+ * Return: return
+ */
+
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+0-memset.c/     0           0     0     644     259       `
+#include "main.h"
+/**
+ * _memset - meme main function
+ * @s: fill area
+ * @b: byte area
+ * @n: memory byte area
+ * Return: return
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int a;
+
+	for (a = 0; a < n; a++)
+	{
+		s[a] = b;
+	}
+	return (s);
+}
+
+0-putchar.c/    0           0     0     644     244       `
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
+	return (0);
+}
+0-reset_to_98.c/0           0     0     644     103       `
+#include "main.h"
+/**
+ *  *reset_to_98 - main
+ *   *@n: n
+ */
+
+void reset_to_98(int *n)
+{
+		*n = 98;
+}
+
+0-strcat.c/     0           0     0     644     333       `
+#include "main.h"
+/**
+ *_strcat - main funciont that concatenate two strings
+ *@dest: string
+ *@src: string
+ *Return: Return dest
+ */
+char *_strcat(char *dest, char *src)
+{
+	int a, b;
+
+	for (a = 0; dest[a] != '\0'; a++)
+	{
+		;
+	}
+	for (b = 0; src[b] != '\0'; b++)
+	{
+		dest[a + b] = src[b];
+	}
+	dest[a + b] = '\0';
+	return (dest);
+}
+
+100-atoi.c/     0           0     0     644     451       `
+#include "main.h"
+/**
+ *_atoi - function that convert a string to an integer
+ *@s: string to convert
+ *Return: the string converted into a integer
+ */
+int _atoi(char *s)
+{
+int a = 0;
+unsigned int b = 0;
+int polo = 1;
+int trufal = 0;
+
+	while (s[a])
+	{
+	if (s[a] == '-')
+	{
+		polo *= -1;
+	}
+	while (s[a] >= '0' && s[a] <= '9')
+	{
+		b = (b * 10) + (s[a] - '0');
+		a++;
+		trufal = 1;
+	}
+	if (trufal == 1)
+	{
+	break;
+	}
+	a++;
+	}
+	b *= polo;
+	return (b);
+}
+
+10-add.c/       0           0     0     644     140       `
+#include "main.h"
+/**
+ * add - main func
+ * @a: a value
+ * @b: b value
+ * Return: sum of a+b
+ */
+int add(int a, int b)
+{
+	return (a + b);
+}
+/0              0           0     0     644     351       `
+#include "main.h"
+/**
+ *  *print_triangle - main
+ *   *@size: size
+ *
+ */
+void print_triangle(int size)
+{
+	int a, b, c;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 1; a <= size; a++)
+		{
+			for (b = size - a; b > 0; b--)
+			{
+				_putchar(' ');
+			}
+			for (c = 0; c < a; c++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+}
+
+/21             0           0     0     644     279       `
+#include "main.h"
+/**
+ *print_to_98 - main func
+ *@n: value
+ *Return: asda
+ */
+void print_to_98(int n)
+{
+	int i;
+
+	if (n <= 98)
+	{
+		for (i = n; i < 98; i++)
+		{
+			printf("%d, ", i);
+		}
+	}
+	else
+	{
+		for (i = n; i > 98; i--)
+		{
+			printf("%d, ", i);
+		}
+	}
+	printf("98\n");
+}
+
+1-alphabet.c/   0           0     0     644     251       `
+#include "main.h"
+
+/**
+ * print_alphabet - check the code
+ *
+ * Return: Always 0.
+ */
+
+/*This is the void function that will print alphabet*/
+void print_alphabet(void)
+{
+	char l = 'a';
+
+	while (l <= 'z')
+	{
+		_putchar(l);
+		l++;
+	}
+	_putchar('\n');
+}
+
+1-isdigit.c/    0           0     0     644     170       `
+#include "main.h"
+/**
+ * _isdigit - main
+ * @c: c
+ * Return: return
+ */
+
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+1-memcpy.c/     0           0     0     644     309       `
+#include "main.h"
+/**
+ *_memcpy - main function to copy the area
+ *@dest: destination of the memory area
+ *@src: source of the memory area
+ *@n: n
+ *Return: Return
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int a;
+
+	for (a = 0; a < n; a++)
+	{
+	dest[a] = src[a];
+	}
+	return (dest);
+}
+
+1-strncat.c/    0           0     0     644     365       `
+#include "main.h"
+/**
+ *_strncat - main funtion
+ *@dest: destination input
+ *@src: source input
+ *@n: amount input
+ *Return: return destination
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int a, b;
+
+		for (a = 0; dest[a] != '\0'; a++)
+		{
+		}
+		for (b = 0; b < n && src[b] != '\0'; b++, a++)
+		{
+			dest[a] = src[b];
+		}
+		dest[a] = '\0';
+	return (dest);
+}
+
+1-swap.c/       0           0     0     644     131       `
+#include "main.h"
+/**
+ *  *swap_int - main
+ * @a: a
+ * @b: b
+ */
+void swap_int(int *a, int *b)
+{
+	int x = *a;
+	*a = *b;
+	*b = x;
+}
+
+2-mul.c/        0           0     0     644     119       `
+#include "main.h"
+/**
+ * mul - main
+ * @a: a
+ * @b: b
+ * Return: return
+ */
+int mul(int a, int b)
+{
+	return (a * b);
+}
+
+/39             0           0     0     644     228       `
+#include "main.h"
+/**
+ * print_alphabet_x10 - start.
+ *
+ *
+ */
+
+void print_alphabet_x10(void)
+{
+	int l;
+	int a;
+
+	for (a = 0 ; a <= 9 ; a++)
+	{
+	for (l = 'a' ; l <= 'z' ; l++)
+	{
+		_putchar(l);
+	}
+	_putchar('\n');
+										}
+}
+2-strchr.c/     0           0     0     644     249       `
+#include "main.h"
+/**
+ *_strchr - main
+ *@s: s
+ *@c: c
+ *Return: Return
+ */
+char *_strchr(char *s, char c)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+{
+	if (s[a] == c)
+	{
+		return (s + a);
+	}
+}
+	if (c == s[a])
+	{
+		return (s + a);
+	}
+	return (0);
+}
+
+2-strlen.c/     0           0     0     644     182       `
+#include "main.h"
+/**
+ * _strlen - main func
+ * @s: string
+ * Return: string lenght
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+2-strncpy.c/    0           0     0     644     296       `
+#include "main.h"
+/**
+ *_strncpy - main
+ *@dest: Destination
+ *@src: Source
+ *@n: N
+ *Return: Return Dest
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int a = 0;
+
+	for (; a < n && src[a] != '\0'; a++)
+	{
+		dest[a] = src[a];
+	}
+	for (; a < n; a++)
+	{
+		dest[a] = '\0';
+	}
+	return (dest);
+}
+3-islower.c/    0           0     0     644     135       `
+#include "main.h"
+/**
+ * _islower - start
+ * @c: value
+ * Return: always 0
+ */
+int _islower(int c)
+{
+	return (c >= 'a' && c <= 'z');
+}
+
+3-main.c/       0           0     0     644     126       `
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_numbers();
+	return (0);
+}
+3-puts.c/       0           0     0     644     199       `
+#include "main.h"
+/**
+ * _puts - main function
+ * @str: variable char type
+ */
+void _puts(char *str)
+{
+	int a;
+
+	for (a = 0; *(str + a) != '\0'; a++)
+	{
+		_putchar(*(str + a));
+	}
+	_putchar('\n');
+}
+
+3-strcmp.c/     0           0     0     644     224       `
+#include "main.h"
+/**
+ *_strcmp - main
+ *@s1: string 1
+ *@s2: string 2
+ *Return: s1 - s2
+ */
+int _strcmp(char *s1, char *s2)
+{
+	int a = 0;
+
+	while (s1[a] - s2[a] == 0 && s1[a] != '\0')
+	{
+	a++;
+	}
+	return (s1[a] - s2[a]);
+}
+3-strspn.c/     0           0     0     644     352       `
+#include "main.h"
+/**
+ *_strspn - main
+ *@s: s
+ *@accept: accept
+ *Return: return
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+int a, b;
+unsigned int res = 0;
+
+for (a = 0; s[a] != '\0'; a++)
+	{
+	for (b = 0; s[b] != '\0'; b++)
+		{
+		if (s[a] == accept[b])
+		{
+		res++;
+		break;
+		}
+		}
+	if (s[b] == '\0')
+		{
+		return (res);
+		}
+	}
+return (res);
+}
+4-isalpha.c/    0           0     0     644     217       `
+#include "main.h"
+
+/**
+ * _isalpha - entry point
+ * @c: int variable
+ * Return: 1 or 0
+ */
+
+int _isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+/63             0           0     0     644     233       `
+#include "main.h"
+/**
+ *  *print_most_numbers - main
+ *   *Return: return
+ *
+ */
+void print_most_numbers(void)
+{
+	int i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		if ((i != '2') && (i != '4'))
+		{
+			_putchar(i);
+		}
+	}
+	_putchar('\n');
+}
+
+4-print_rev.c/  0           0     0     644     216       `
+#include "main.h"
+#include "2-strlen.c"
+/**
+ * print_rev - main function
+ * @s: variable
+ */
+void print_rev(char *s)
+{
+	int a;
+
+	for (a = (_strlen(s) - 1); a >= 0; a--)
+	{
+		_putchar(*(s + a));
+	}
+	_putchar('\n');
+}
+4-rev_array.c/  0           0     0     644     202       `
+#include "main.h"
+/**
+ *reverse_array - main
+ *@a: a
+ *@n: n
+ */
+void reverse_array(int *a, int n)
+{
+	int x, b;
+
+	for (x = 0; x < n / 2; x++)
+	{
+	b = a[x];
+	a[x] = a[n - x - 1];
+	a[n - x - 1] = b;
+	}
+}
+4-strpbrk.c/    0           0     0     644     269       `
+#include "main.h"
+/**
+*_strpbrk - main
+*@s: s
+*@accept: accepted char
+*Return: Return
+*/
+char *_strpbrk(char *s, char *accept)
+{
+int x, z;
+
+for (x = 0; s[x]; x++)
+	{
+	for (z = 0; accept[z]; z++)
+	{
+		if (s[x] == accept[z])
+		{
+		return (s + x);
+		}
+	}
+	}
+return (0);
+}
+
+/87             0           0     0     644     265       `
+#include "main.h"
+/**
+ *  *more_numbers - main
+ *
+ *
+ *
+ */
+void more_numbers(void)
+{
+	int i, b;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (b = 0; b <= 14; b++)
+		{
+			if (b > 9)
+			{
+				_putchar(b / 10 + '0');
+			}
+			_putchar(b % 10 + '0');
+		}
+		_putchar('\n');
+	}
+}
+
+5-rev_string.c/ 0           0     0     644     284       `
+#include "main.h"
+#include "2-strlen.c"
+/**
+ *rev_string - main function that rev a string
+ *@s: string
+ */
+void rev_string(char *s)
+{
+	int leng = _strlen(s);
+	char tmp;
+	int i;
+
+	for (i = 0; i < leng / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[leng - 1 - i];
+		s[leng - 1 - i] = tmp;
+	}
+}
+5-sign.c/       0           0     0     644     323       `
+#include "main.h"
+
+/**
+ * print_sign - main function
+ *
+ * @n: char to comp
+ *
+ * Return: if n > 0 return 1, n < 0 return -1, n = 0 return 0
+ *
+ **/
+
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n < 0)
+	{
+		_putchar('-');
+		return (-1);
+	}
+	else
+	{
+		_putchar('0');
+		return (0);
+	}
+}
+
+/105            0           0     0     644     224       `
+#include "main.h"
+/**
+ *string_toupper - main
+ *@a: a
+ *Return: return a
+ */
+char *string_toupper(char *a)
+{
+int b;
+
+for (b = 0; a[b] != '\0'; b++)
+{
+	if (a[b] >= 'a' && a[b] <= 'z')
+	{
+	a[b] = a[b] - 32;
+	}
+}
+return (a);
+}
+5-strstr.c/     0           0     0     644     507       `
+#include "main.h"
+/**
+ * _strstr - main function to locate a substring
+ * @haystack: main string
+ * @needle: sub string to locate
+ * Return: Return
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	int x, z;
+
+	if (needle[0] == '\0')
+	{
+		return (haystack);
+	}
+	for (x = 0; haystack[x]; x++)
+	{
+		if (haystack[x] == needle[0])
+		for (z = 0; needle[z]; z++)
+		{
+			if (haystack[x + z] != needle[z])
+			{
+				break;
+			}
+			if (needle[z] == '\0')
+			{
+				return (haystack + x);
+			}
+		}
+	}
+	return ('\0');
+}
+
+6-abs.c/        0           0     0     644     177       `
+#include "main.h"
+/**
+ * _abs - Main entry point
+ * @n: variable
+ * Return: return -n or n
+ *
+ */
+int _abs(int n)
+{
+	if (n < 0)
+	{
+		return (-n);
+	}
+	else
+	{
+		return (n);
+	}
+}
+
+6-cap_string.c/ 0           0     0     644     428       `
+#include "main.h"
+#include "2-strlen.c"
+/**
+ *cap_string - main
+ *@s: s
+ *Return: return
+ */
+char *cap_string(char *s)
+{
+	int a, c;
+	int may = 1;
+	char sp[] = {32, 9, 10, 44, 59, 34, 40, 41, 123, 125, 46, 33, 63};
+
+	for (a = 0; a < _strlen(s); a++)
+	{
+		if (s[a] >= 'a' && s[a] <= 'z' && may == 1)
+		{
+			s[a] -= 32;
+		}
+		may = 0;
+		for (c = 0; sp[c]; c++)
+		{
+			if (s[a] == sp[c])
+			{
+			may = 1;
+			}
+		}
+	}
+	return (s);
+}
+6-print_line.c/ 0           0     0     644     178       `
+#include "main.h"
+/**
+ * print_line - mian
+ * @n: n
+ * Return: return
+ *
+ */
+void print_line(int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
+}
+6-puts2.c/      0           0     0     644     192       `
+#include "main.h"
+/**
+ *puts2 - main function
+ *@str: string
+ */
+void puts2(char *str)
+{
+	int i;
+
+	for (i = 0; str[i]; i++)
+	{
+	if (i % 2 == 0)
+	{
+		_putchar(str[i]);
+	}
+	}
+	_putchar('\n');
+}
+7-leet.c/       0           0     0     644     291       `
+#include "main.h"
+/**
+ *leet - leet function
+ *@a: a
+ *Return: return
+ */
+char *leet(char *a)
+{
+char x[] = "AEOTL";
+char n[] = "43071";
+int i = 0, z = 0;
+
+while (a[i])
+{
+	z = 0;
+	while (z < 5)
+	{
+		if (a[i] == x[z] || a[i] - 32 == x[z])
+		{
+		a[i] = n[z];
+		}
+	z++;
+	}
+	i++;
+}
+return (a);
+}
+
+/125            0           0     0     644     215       `
+#include "main.h"
+/**
+ *print_chessboard - print chess
+ *@a: a
+ */
+void print_chessboard(char (*a)[8])
+{
+int x, y;
+
+for (x = 0; x < 8; x++)
+{
+	for (y = 0; y < 8; y++)
+	{
+		_putchar(a[x][y]);
+	}
+	_putchar('\n');
+}
+}
+
+/147            0           0     0     644     278       `
+#include "main.h"
+/**
+ * print_diagonal - main
+ * @n: n
+ *
+ *
+ */
+void print_diagonal(int n)
+{
+	int a, b;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < n; a++)
+	{
+		for (b = 0; b < a; b++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
+	}
+}
+/167            0           0     0     644     219       `
+#include "main.h"
+/**
+ * print_last_digit - entry point
+ * @n: variab
+ * Return: return last number
+ *
+ */
+int print_last_digit(int n)
+{
+	int x = n % 10;
+
+	if (x < 0)
+	{
+		x = -x;
+	}
+	_putchar(x + '0');
+	return (x);
+}
+
+
+7-puts_half.c/  0           0     0     644     319       `
+#include "main.h"
+#include "2-strlen.c"
+/**
+ *puts_half - main function that prints the half of a string
+ *@str: string
+ */
+void puts_half(char *str)
+{
+int a = 0;
+int b = 0;
+
+	if (_strlen(str) % 2 != 0)
+	{
+		a++;
+	}
+	for (b = (_strlen(str) + a) / 2; b < _strlen(str); b++)
+	{
+		_putchar(str[b]);
+	}
+	_putchar('\n');
+
+}
+
+8-24_hours.c/   0           0     0     644     332       `
+#include "main.h"
+/**
+ * jack_bauer - main func
+ * Return: nothing
+ *
+ */
+void jack_bauer(void)
+{
+	int h, m;
+
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
+	}
+}
+8-main.c/       0           0     0     644     631       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ *  * main - check the code
+ *   *
+ *    * Return: Always 0.
+ *     */
+int main(void)
+{
+	    int c3[3][3] = {
+		            {0, 1, 5},
+			            {10, 11, 12},
+				            {1000, 101, 102},
+					        };
+	        int c5[5][5] = {
+			        {0, 1, 5, 12124, 1234},
+				        {10, 11, 12, 123521, 12512},
+					        {1000, 101, 102, 12545, 214543435},
+						        {100, 1012451, 11102, 12545, 214543435},
+							        {10, 12401, 10452, 11542545, 1214543435},
+								    };
+		    print_diagsums((int *)c3, 3);
+		        print_diagsums((int *)c5, 5);
+			    return (0);
+}
+
+8-print_array.c/0           0     0     644     312       `
+#include "main.h"
+/**
+ * print_array - main function that prints an array of integers
+ * @a: array
+ * @n: number of elements of the array to be printed
+ */
+void print_array(int *a, int n)
+{
+	int x;
+
+	for (x = 0; x < n; x++)
+	{
+		printf("%d", a[x]);
+		if (x != n - 1)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+}
+/189            0           0     0     644     286       `
+#include "main.h"
+/**
+ *  *print_square - main
+ *   *@size: size
+ *
+ *
+ */
+void print_square(int size)
+{
+	int a, b;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < size; a++)
+		{
+			for (b = 0; b < size; b++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
+}
+9-fizz_buzz.c/  0           0     0     644     358       `
+#include "stdio.h"
+/**
+ * main - main
+ * Return: 0
+ */
+int main(void)
+{
+	int a;
+
+	for (a = 1; a <= 100; a++)
+	{
+		if (a % 3 == 0 || a % 5 == 0)
+		{
+			if (a % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (a % 5 == 0)
+			{
+				printf("Buzz");
+			}
+		}
+		else
+		{
+			printf("%d", a);
+		}
+		if (a != 100)
+		{
+			printf(" ");
+		}
+	}
+	printf("\n");
+	return (0);
+}
+9-strcpy.c/     0           0     0     644     270       `
+#include "main.h"
+#include "2-strlen.c"
+/**
+ *_strcpy - main funcion
+ *@dest: dest
+ *@src: soruce
+ *Return: char valeu
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int a;
+
+	for (a = 0; a <= _strlen(src); a++)
+	{
+		dest[a] = src[a];
+	}
+	dest[a] = '\0';
+	return (dest);
+}
+9-times_table.c/0           0     0     644     549       `
+#include "main.h"
+/**
+ * times_table - main func
+ * Return: nothing
+ *
+ *
+ */
+void times_table(void)
+{
+	int line;
+
+	int column;
+
+	int res;
+
+	for (line = 0; line <= 9; line++)
+	{
+		for (column = 0; column <= 9; column++)
+		{
+			res = line * column;
+			if (column == 0)
+			{
+				_putchar('0');
+			}
+			else if (res < 10)
+			{
+				_putchar(' ');
+				_putchar(res + '0');
+			}
+			else
+			{
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			if (column < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+}
+
+_putchar.c/     0           0     0     644     244       `
+#include <unistd.h>
+
+/**
+ *_putchar - writes the character c to stdout
+ *@c: The character to print
+ *
+ *Return: On success 1.
+ *On error, -1 is returned, and errno is set appropriately.
+ **/
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
