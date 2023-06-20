@@ -20,7 +20,7 @@ int main(void)
 		printf("%i is negative", n);
 	if (n > 0)
 		printf("%i is positive", n);
-	else
+	if (n == 0)
 		printf("%i is zero", n);
 	return (0);
 }
