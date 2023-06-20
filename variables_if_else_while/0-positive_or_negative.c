@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 
-/*
- * main - Assign a random number and define if it is positive or negative.
+/**
+ * main - start
+ * Return: always 0
  *
- * Always return (0)
+ *
  */
 
 int main(void)
